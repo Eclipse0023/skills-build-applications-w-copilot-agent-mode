@@ -13,18 +13,23 @@ function Workouts() {
   return (
     <div>
       <h1 className="display-4">Workouts</h1>
+      <button className="btn btn-primary mb-3" onClick={() => alert('Add Workout clicked!')}>Add Workout</button>
       <table className="table table-striped">
         <thead>
           <tr>
             <th>Name</th>
             <th>Description</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          {workouts.map(workout => (
-            <tr key={workout._id}>
+          {workouts.map((workout, index) => (
+            <tr key={index}>
               <td>{workout.name}</td>
               <td>{workout.description}</td>
+              <td>
+                <button className="btn btn-danger" onClick={() => alert('Delete Workout clicked!')}>Delete</button>
+              </td>
             </tr>
           ))}
         </tbody>
