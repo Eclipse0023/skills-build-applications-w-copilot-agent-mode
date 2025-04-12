@@ -6,7 +6,7 @@ SECRET_KEY = 'your-secret-key'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'glorious-happiness-wp6r7v4vw7435vw6-8000.app.github.dev']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
